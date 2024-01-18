@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        position: fixed;
+      }
+
+      .sun {
+        top: 50vh;
+        left: 20vw;
+        z-index: 1;
+        background-color: rgb(219, 147, 88);
+        width: 20vw;
+        height: 20vw;
+        /* to jest to ze nie daje sie vh bo znieksztalca pozniej te kolo */
+        border-radius: 50%;
+      }
+
+      .grass {
+        bottom: 0;
+        z-index: 2;
+        width: 100vw;
+        height: 40vh;
+        background-color: rgb(41, 112, 41);
+      }
+
+      .sky {
+        width: 100vw;
+        height: 60vh;
+        background-color: rgb(65, 122, 246);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+    <div class="sky"></div>
+  </body>
+</html>
